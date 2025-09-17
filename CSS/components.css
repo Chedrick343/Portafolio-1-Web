@@ -102,3 +102,64 @@
         display: none;
     }
 }
+@media (min-width: 1024px){
+    /*ELEMENTOS CON CLASES*/
+    .circulos{
+        box-shadow: 2px 0px 30px rebeccapurple;
+    }
+
+    /*ELEMENTOS CON ID*/
+    #imagenPersonal{
+    box-shadow: 1px 2px 20px rebeccapurple;
+}
+    #acercaDe{
+        
+        display: flex;
+        flex-direction: row;
+    }
+
+    #circulo2 {
+        position: absolute;
+        top: 350px;   /* ajusta posición */
+        left: 700px;  /* ajusta posición */
+        width: 150px;
+        height: 150px;
+        background-color: transparent;
+        border: 5px solid rgb(2, 31, 13);
+        border-radius: 50%;
+        z-index: 0; /* detrás de los otros */
+    }
+    #circulo3 {
+        position: absolute;
+        top: 400px;   /* ajusta posición */
+        left: 1100px;  /* ajusta posición */
+        width: 150px;
+        height: 150px;
+        background-color: transparent;
+        border: 5px solid rgb(37, 37, 1);
+        border-radius: 50%;
+        z-index: 0; /* detrás de los otros */
+    }
+    #circulo4 {
+        position: absolute;
+        top: 80px;   /* ajusta posición */
+        left: 900px;  /* ajusta posición */
+        width: 150px;
+        height: 150px;
+        background-color: transparent;
+        border: 5px solid rgb(37, 0, 75);
+        border-radius: 50%;
+        z-index: 0; /* detrás de los otros */
+    }
+    #circulo5 {
+        position: absolute;
+        top: 400px;   /* ajusta posición */
+        left: 300px;  /* ajusta posición */
+        width: 150px;
+        height: 150px;
+        background-color: transparent;
+        border: 5px solid rgb(2, 71, 83);
+        border-radius: 50%;
+        z-index: 0; /* detrás de los otros */
+    }
+}
