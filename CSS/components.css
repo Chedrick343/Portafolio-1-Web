@@ -1,0 +1,73 @@
+
+/*SECCION DE ELEMENTOS POR CLASES*/
+.botonNavegacion{
+    background-color: transparent;
+}
+
+
+
+/*SECCION DE ELEMENTOS POR ID*/
+#textoIntroductorio{
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#botonCerrarMenuHamburguesa{
+    position:relative;
+    border-radius: 4rem;
+    width: 2rem;
+    height: 2rem;
+    left: 15rem;
+}
+
+#imagenPersonal{
+    background-color: rgb(146, 140, 140);
+    width: 15rem;
+    border-radius: 300px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#botonMenuHamburguesaMovil{
+    color: white;
+    background-color: rgb(78, 41, 99);
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100px;
+    box-shadow: 0 8px 16px rgba(77, 13, 77, 0.863);
+    transition: box-shadow 0.2s ease;
+}
+#acercaDe{
+    box-shadow: 0 0px 30px rgba(226, 117, 117, 0.329);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 1, 17);
+    border-radius: 20px;
+    height: 35rem;
+}
+
+#logoInsta{
+    width: 1rem;
+    height: 1rem;
+}
+
+#logoFacebook{
+    width: 1rem;
+    height: 1rem;
+}
+
+#logoWhatsapp{
+    width: 1rem;
+    height: 1rem;
+}
+
+/*SECCION DE HOVERS*/
+#botonMenuHamburguesaMovil:hover{
+    color: black;
+    background-color: rgb(99, 87, 87);
+    box-shadow: 0 8px 16px rgba(204, 86, 204, 0.863);
+}

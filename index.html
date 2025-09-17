@@ -2,18 +2,29 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/base.css">
+        <link rel="stylesheet" href="CSS/layout.css">
+        <link rel="stylesheet" href="CSS/components.css">
+        <link rel="stylesheet" href="CSS/override.css">
         <title>Acerca de mi</title>
     </head>
     <body>
-        <button>☰</button>
+        <button id="botonMenuHamburguesaMovil">☰</button>
+        <nav>
+            <button id="botonCerrarMenuHamburguesa">X</button>
+            <button class="botonNavegacion"><a href="#index.html">Inicio</a></button>
+            <button class="botonNavegacion"><a href="#cursos.html">Ver cursos</a></button>
+            <button class="botonNavegacion"><a href="#experiencia.html">Mi experiencia</a></button>
+        </nav>
         <section id="acercaDe" aria-label="Seccion acerca del desarrollador que creo la pagina web">
             <img id="imagenPersonal" src="/sources/images/imagen-personal.png" alt="Fotografia ">
-            <p>Hola, soy estudiante del <a href="https://www.tec.ac.cr/" target="_blank" rel="noopener noreferrer">Tecnologico de Costa Rica </a>y estoy desarrollando este pequenio sitio web como portafolio #1 del curso de introduccion al desarrollo de paginas web. Mis expectativas con este curso son poder aprender la mayoria de cosas que ahora se requieren para ser un desarrollador de alta calidad y un dia poder ser un completo profesional en el desarrollo web. Agradezco que visiten mi sitio web y espero les sea agradable.</p>
+            <p id="textoIntroductorio">Hola, soy estudiante del <a href="https://www.tec.ac.cr/" target="_blank" rel="noopener noreferrer">Tecnologico de Costa Rica </a>y estoy desarrollando este pequenio sitio web como portafolio #1 del curso de introduccion al desarrollo de paginas web. Mis expectativas con este curso son poder aprender la mayoria de cosas que ahora se requieren para ser un desarrollador de alta calidad y un dia poder ser un completo profesional en el desarrollo web. Agradezco que visiten mi sitio web y espero les sea agradable.</p>
         </section>
         <footer>
-            <p>chedric.k</p>
-            <p>Chedrick Uzaga</p>
-            <P>+506 8378-3228</P>
+            <p><img id="logoInsta" src="sources/images/instagram-logo.svg" alt="pequenia imagen del logo de instagram">chedric.k</p>
+            <p><img id="logoFacebook" src="sources/images/facebook-logo.svg" alt="pequenia imagen del logo de facebook">Chedrick Uzaga</p>
+            <P><img id="logoWhatsapp" src="sources/images/whatsapp-logo.svg" alt="pequenia imagen del logo de whatsapp">+506 8378-3228</P>
         </footer>
     </body>
+    <script src="JS/menu.js"></script>
 </html>
