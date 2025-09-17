@@ -1,7 +1,12 @@
 
 /*SECCION DE ELEMENTOS POR CLASES*/
 .botonNavegacion{
+    height: 2rem;
     background-color: transparent;
+    color: white;
+    border: 2px solid rgb(39, 6, 58);
+    border-radius: 1rem;
+    transition: box-shadow 0.2s ease;
 }
 
 
@@ -14,14 +19,17 @@
 }
 
 #botonCerrarMenuHamburguesa{
+    color: white;
+    background-color: rgb(148, 14, 14);
     position:relative;
     border-radius: 4rem;
     width: 2rem;
     height: 2rem;
-    left: 15rem;
+    
 }
 
 #imagenPersonal{
+    box-shadow: 0 5px 60px rebeccapurple;
     background-color: rgb(146, 140, 140);
     width: 15rem;
     border-radius: 300px;
@@ -70,4 +78,27 @@
     color: black;
     background-color: rgb(99, 87, 87);
     box-shadow: 0 8px 16px rgba(204, 86, 204, 0.863);
+}
+
+.botonNavegacion:hover{
+    box-shadow: 0 3px 30px rgba(204, 86, 204, 0.863);
+}
+
+/*MEDIA PARA HACER RESPONSIVE*/
+@media (min-width: 768px){
+    /*ELEMENTOS CON CLASES*/
+    .botonNavegacion{
+        width: 25rem;
+    }
+    /*ELEMENTOS CON ID*/
+    #acercaDe{
+        display: flex;
+        flex-direction: row;
+    }
+    #botonCerrarMenuHamburguesa{
+        display: none;
+    }
+    #botonMenuHamburguesa{
+        display: none;
+    }
 }
