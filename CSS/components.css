@@ -12,6 +12,56 @@
 
 
 /*SECCION DE ELEMENTOS POR ID*/
+
+
+/*CURSOS.HTML*/
+/*ELEMENTOS POR CLASES*/
+    .selector{
+        background-color: transparent;
+        margin-top: 0.7rem;
+        height: 2rem;
+        width: 7rem;
+        border-radius: 20px;
+        border: 1px solid #370f5c;
+        box-shadow: 0 2px 12px rgba(77, 13, 77, 0.863);
+        transition: box-shadow 0.2s ease;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .curso{
+        background-color: white;
+        border: 1px solid #370f5c;
+    }
+/*ELEMENTOS POR ID*/
+    #cajaDeCursos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 2rem;
+        display: grid;
+        background-color: transparent;
+        border: 2px solid rgba(77, 13, 77, 0.863);;
+        width: 96%;
+        height: 100%;
+    }
+    #selectoresCursos{
+        width: 96%;
+        height: 5rem;
+        background-color: transparent;
+        border: 1px solid rgb(55, 15, 92);
+        border-radius: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #selectorAnio{
+        margin-left: 5rem;
+    }
+    #selectorSemestre{
+        margin-right: 5rem;
+    }
+/*INDEX.HTML*/
 #textoIntroductorio{
     text-align: justify;
     margin-left: 1rem;
@@ -74,6 +124,15 @@
 }
 
 /*SECCION DE HOVERS*/
+
+
+/*HOVERS DE CURSOS.HTML*/
+.selector:hover{
+    box-shadow: 0 3px 30px rgba(204, 86, 204, 0.863);
+}
+
+
+/*HOVERS DE INDEX.HTML*/
 #botonMenuHamburguesaMovil:hover{
     color: black;
     background-color: rgb(99, 87, 87);
@@ -106,6 +165,7 @@
     /*ELEMENTOS CON CLASES*/
     .circulos{
         box-shadow: 2px 0px 30px rebeccapurple;
+
     }
 
     /*ELEMENTOS CON ID*/
@@ -113,11 +173,20 @@
     box-shadow: 1px 2px 20px rebeccapurple;
 }
     #acercaDe{
-        
         display: flex;
         flex-direction: row;
     }
-
+    #circulo1 {
+        position: absolute;
+        top: 350px;   /* ajusta posición */
+        left: 1500px;  /* ajusta posición */
+        width: 150px;
+        height: 150px;
+        background-color: transparent;
+        border: 5px solid rgb(2, 42, 49);
+        border-radius: 50%;
+        z-index: 0; /* detrás de los otros */
+    }
     #circulo2 {
         position: absolute;
         top: 350px;   /* ajusta posición */
@@ -158,8 +227,9 @@
         width: 150px;
         height: 150px;
         background-color: transparent;
-        border: 5px solid rgb(2, 71, 83);
+        border: 5px solid rgb(2, 42, 49);
         border-radius: 50%;
         z-index: 0; /* detrás de los otros */
     }
+    
 }

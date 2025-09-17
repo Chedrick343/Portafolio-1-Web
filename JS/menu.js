@@ -1,5 +1,7 @@
     const botonAbrir = document.getElementById("botonMenuHamburguesaMovil");
     const botonCerrar = document.getElementById("botonCerrarMenuHamburguesa");
+    const botonCursos = document.getElementById("botonCursos");
+    const botonInicio = document.getElementById("botonInicio");
     const nav = document.querySelector("nav");
 
     botonAbrir.addEventListener("click", () => {
@@ -7,4 +9,10 @@
     });
     botonCerrar.addEventListener("click", ()=>  {
         nav.classList.toggle("activo");
+    });
+    botonCursos.addEventListener("click", () => {
+        window.location.href = "/HTML/cursos.html";
+    });
+    botonInicio.addEventListener("click", () => {
+        window.location.href = "../index.html";
     });
