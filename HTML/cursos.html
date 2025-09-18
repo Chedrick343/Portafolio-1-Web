@@ -16,10 +16,12 @@
             <button id="botonCursos" class="botonNavegacion">📃Ver cursos</button>
             <button class="botonNavegacion">Mi experiencia</button>
         </nav>
-        <h2>Cursos y sus respectivas evaluaciones</h2>
+        <h2 id="tituloCursos">Cursos y sus respectivas evaluaciones</h2>
         <div id="selectoresCursos">
-            <select class="selector" name="" id="selectorAnio"></select>
-            <select class="selector" name="" id="selectorSemestre"></select>
+            <label for="selectorAnio" class="labelTitulos" id="labelAnio">Año</label>
+            <label for="selectorSemestre" class="labelTitulos" id="labelSemestre">Semestre</label>
+            <select class="selector" id="selectorAnio"></select>
+            <select class="selector" id="selectorSemestre"></select>
         </div>
         <section id="cajaDeCursos">
             <div class="curso"><p>Esto es un curso</p></div>
@@ -30,4 +32,5 @@
         </section>
     </body>
     <script src="../JS/menu.js"></script>
+    <script src="../JS/manejoJson.js"></script>
 </html>

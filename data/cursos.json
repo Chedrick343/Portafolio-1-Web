@@ -1,0 +1,165 @@
+{
+    "anios": [
+    {
+        "anio": "2025",
+        "semestres": [
+        {
+            "semestre": 2,
+            "cursos": [
+            {
+                "nombre": "Introduccion al desarrollo de paginas web",
+                "trabajos": [
+                    {
+                        "nombre": "Laboratorio 1",
+                        "tipo": "Laboratorio", 
+                        "descripcion": "laboratorio dedicado a explorar un poco de los conocimientos basicos requeridos en desarrollo web",
+                        "fecha_entrega": "10/08/2025",
+                        "tecnologias": ["Markdow", "Visual Studio Code", "Github"],
+                        "repositorio": "https://github.com/Chedrick343/Laboratorio-1-Desarrollo-Web",
+                        "sitio": ""
+                    },
+                    {
+                        "nombre": "Laboratorio 2",
+                        "tipo": "Laboratorio", 
+                        "descripcion": "Se desarrollo una pagina web en html puro para manejar accesibilidad y semantica",
+                        "fecha_entrega": "16/08/2025",
+                        "tecnologias": ["Markdow", "Visual Studio Code", "Github", "HTML"],
+                        "repositorio": "https://github.com/Chedrick343/Laboratorio2DesarrolloWeb",
+                        "sitio": "https://labeventotecnologico.netlify.app/"
+                    },
+                    {
+                        "nombre": "Laboratorio 3",
+                        "tipo": "Laboratorio", 
+                        "descripcion": "Se continuo con el laboratorio 2 para ponerle CSS",
+                        "fecha_entrega": "25/08/2025",
+                        "tecnologias": ["Markdow", "Visual Studio Code", "Github", "HTML", "CSS"],
+                        "repositorio": "https://github.com/Chedrick343/Laboratorio2DesarrolloWeb/tree/lab3-selectores-boxmodel",
+                        "sitio": "https://merry-torte-bcddc7.netlify.app/"
+                    },
+                    {
+                        "nombre": "Laboratorio 4",
+                        "tipo": "Laboratorio", 
+                        "descripcion": "Comprobacion de la clase asincronica de accesibilidad y responsive",
+                        "fecha_entrega": "29/08/2025",
+                        "tecnologias": ["Markdow", "Visual Studio Code", "Github", "HTML", "CSS"],
+                        "repositorio": "https://github.com/Chedrick343/Laboratorio2DesarrolloWeb/tree/lab3-selectores-boxmodel",
+                        "sitio": ""
+                    },
+                    {
+                        "nombre": "Laboratorio 5",
+                        "tipo": "Laboratorio", 
+                        "descripcion": "Continuacion del laboratorio 3, en este caso hacer responsive",
+                        "fecha_entrega": "29/08/2025",
+                        "tecnologias": ["Markdow", "Visual Studio Code", "Github", "HTML", "CSS"],
+                        "repositorio": "https://github.com/Chedrick343/Laboratorio2DesarrolloWeb/tree/lab5-responsive",
+                        "sitio": "https://labresponsive.netlify.app/"
+                    }
+                    
+                ]
+            },
+            {
+                "nombre": "Compiladores e interpretes",
+                "trabajos": [
+                    {
+                        "nombre": "Portafolio 1",
+                        "tipo": "Portafolio", 
+                        "descripcion": "Portafolio para poner todos los ejercicios hechos en la unidad 1",
+                        "fecha_entrega": "28/08/2025",
+                        "tecnologias": ["Word"],
+                        "repositorio": "",
+                        "sitio": ""
+                    },
+                    {
+                        "nombre": "Prueba Corta 1",
+                        "tipo": "Prueba Corta", 
+                        "descripcion": "Prueba corta para comprobar una lectura",
+                        "fecha_entrega": "19/08/2025",
+                        "tecnologias": ["Mentimeter"],
+                        "repositorio": "",
+                        "sitio": ""
+                    },
+                    {
+                        "nombre": "Tarea 1",
+                        "tipo": "Tarea", 
+                        "descripcion": "Tarea 1 para desarrollar una gramatica para un lenguaje",
+                        "fecha_entrega": "12/09/2025",
+                        "tecnologias": ["BNF", "Regex"],
+                        "repositorio": "https://github.com/Chedrick343/Tarea-1-compiladores",
+                        "sitio": ""
+                    }
+                ]
+            },
+            {
+                "nombre": "Bases de datos 2",
+                "trabajos": []
+            },
+            {
+                "nombre": "Disenio de Software",
+                "trabajos": []
+            }
+            ]
+        },
+        {
+            "semestre": 1,
+            "cursos": [
+            {
+                "nombre": "Lenguajes de programacion",
+                "trabajos": [
+                {
+                    "nombre": "Proyecto 1",
+                    "tipo": "Proyecto",
+                    "descripcion": "Proyecto para probar dominio del lenguaje imperativo",
+                    "fecha_entrega": "31/03/25",
+                    "tecnologias": ["C++", "Visual Studio Code"],
+                    "repositorio": "",
+                    "sitio": ""
+                }
+                ]
+            }
+            ]
+        }
+        ]
+    },
+    {
+        "anio":"2024",
+        "semestres": [
+            {
+                "semestre" : 2,
+                "cursos" : [
+                    {
+                        "nombre" : "Bases de datos 1",
+                        "trabajos" : [
+                            {
+                                "nombre": "Laboratorio Creacion de tablas",
+                                "tipo": "Laboratorio",
+                                "descripcion": "Laboratorio para practicar la creacion de tablas",
+                                "fecha_entrega": "06/09/2024",
+                                "tecnologias": ["MySql","Workbench"],
+                                "repositorio": "",
+                                "sitio": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "semestre": 1,
+                "cursos" : [{
+                    "nombre" : "Programacion orientada a objetos",
+                    "trabajos" : [
+                        {
+                            "nombre": "Laboratorio parqueo",
+                            "tipo": "Laboratorio",
+                            "descripcion": "Laboratorio para la creacion de un parqueo",
+                            "fecha_entrega": "17/03/2024",
+                            "tecnologias": ["Java","NetBeans"],
+                            "repositorio": "",
+                            "sitio": ""
+                        }
+                        ]
+                }]
+            }
+        ]
+    }
+    ]
+}

@@ -16,21 +16,33 @@
 
 /*CURSOS.HTML*/
 /*ELEMENTOS POR CLASES*/
-    .selector{
-        background-color: transparent;
-        margin-top: 0.7rem;
-        height: 2rem;
-        width: 7rem;
-        border-radius: 20px;
-        border: 1px solid #370f5c;
-        box-shadow: 0 2px 12px rgba(77, 13, 77, 0.863);
-        transition: box-shadow 0.2s ease;
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-    }
+.labelTitulos {
+    font-size: 1rem;
+    color: white;
+}
+
+.selector {
+    text-align: center;
+    color:  #7734b6;
+    background-color: transparent;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 20px;
+    border: 1px solid #370f5c;
+    box-shadow: 0 2px 12px rgba(77, 13, 77, 0.863);
+    justify-self: center;
+}
     .curso{
-        background-color: white;
+        margin-top: 5rem;
+        height: 3rem;
+        border-radius: 10rem;
+        display: flex;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        background-color: transparent;
+        color:red;
+        justify-content: center;
+        align-items: center;
         border: 1px solid #370f5c;
     }
 /*ELEMENTOS POR ID*/
@@ -43,23 +55,18 @@
         background-color: transparent;
         border: 2px solid rgba(77, 13, 77, 0.863);;
         width: 96%;
-        height: 100%;
+        height: 100%; 
     }
-    #selectoresCursos{
-        width: 96%;
-        height: 5rem;
+    #selectoresCursos {
+        width: 98%;
+        height: 9rem;
         background-color: transparent;
         border: 1px solid rgb(55, 15, 92);
         border-radius: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #selectorAnio{
-        margin-left: 5rem;
-    }
-    #selectorSemestre{
-        margin-right: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* dos columnas */
+        grid-template-rows: auto auto; /* dos filas */
+        text-align: center;
     }
 /*INDEX.HTML*/
 #textoIntroductorio{
@@ -146,6 +153,10 @@
 /*MEDIA PARA HACER RESPONSIVE*/
 @media (min-width: 768px){
     /*ELEMENTOS CON CLASES*/
+    #tituloCursos{
+        margin-top: 5rem;
+    }
+    
     .botonNavegacion{
         width: 25rem;
     }
@@ -165,13 +176,19 @@
     /*ELEMENTOS CON CLASES*/
     .circulos{
         box-shadow: 2px 0px 30px rebeccapurple;
-
     }
 
     /*ELEMENTOS CON ID*/
+    #selectoresCursos {
+        margin-top: 1rem;
+        height: 8rem;
+    }
+    #cajaCursos{
+
+    }
     #imagenPersonal{
     box-shadow: 1px 2px 20px rebeccapurple;
-}
+    }
     #acercaDe{
         display: flex;
         flex-direction: row;

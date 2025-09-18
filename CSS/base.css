@@ -61,7 +61,5 @@ nav.activo {
     }
 }
 @media (min-width: 1024px){
-    body{
-        display: grid;
-    }
+    
 }
