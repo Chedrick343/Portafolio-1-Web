@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="../CSS/layout.css">
         <link rel="stylesheet" href="../CSS/components.css">
         <link rel="stylesheet" href="../CSS/override.css">
-        <title>Cursos de la U</title>
     </head>
     <body>
         <button id="botonMenuHamburguesaMovil">☰</button>
@@ -16,24 +15,25 @@
             <button id="botonCursos" class="botonNavegacion">📃Ver cursos</button>
             <button id="botonExperiencia" class="botonNavegacion">Mi experiencia</button>
         </nav>
-        <h2 id="tituloCursos">Cursos y sus respectivas evaluaciones</h2>
-        <div id="selectoresCursos">
-            <label for="selectorAnio" class="labelTitulos" id="labelAnio">Año</label>
-            <label for="selectorSemestre" class="labelTitulos" id="labelSemestre">Semestre</label>
-            <select class="selector" id="selectorAnio"></select>
-            <select class="selector" id="selectorSemestre"></select>
-        </div>
-        <section id="cajaDeCursos">
-        </section>
-        <div id="modalCurso" class="modal">
-            <div class="modal-contenido">
-                <span id="cerrarModal" class="cerrar">&times;</span>
-                <h3 id="tituloCurso"></h3>
-                <div id="trabajosCurso"></div>
+        <section id="trayectoriaPersonal">
+            <h2>Mi trayectoria como profesional</h2>
+            <img id="imagenPersonal" src="/sources/images/imagen-personal.png" alt="Fotografia ">
+            <div id="informacionPersonal">
+                <h2 id="nombre"></h2>
+                <p id="biografia"></p>
             </div>
-        </div>
-        
+            <div id="habilidadesTecnicas">
+            </div>
+            <div id="certificaciones">
+            </div>
+            <div id="infoAdicional"></div>
+            <div id="redes">
+            </div>
+            
+        </section>
+        <button id="descargarPdf">Descargar pdf ⬇️</button>
     </body>
     <script src="../JS/menu.js"></script>
-    <script src="../JS/manejoJson.js"></script>
+    <script src="../JS/manejoInformacionPersonal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </html>

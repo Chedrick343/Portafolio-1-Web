@@ -1,0 +1,81 @@
+{
+    "nombre": "Chedrick Uzaga",
+    "biografia": "Soy estudiante del Tecnológico de Costa Rica, participativo y con muchas ganas de aprender y reforzar conocimientos que ya tengo. Mi meta como profesional es poder crecer todo lo que pueda, aprender de aquellos con más experiencia que yo y mantenerme al día con las tecnologías. Al finalizar mi carrera me gustaría dedicarme al frontend o a la ciberseguridad, son dos áreas que me apasionan.",
+    "habilidades": {
+        "Frontend": [
+            {
+                "nombre": "HTML",
+                "nivel": 90
+            },
+            {
+                "nombre": "CSS",
+                "nivel": 85
+            },
+            {
+                "nombre": "JavaScript",
+                "nivel": 80
+            },
+            {
+                "nombre": "React",
+                "nivel": 75
+            }
+        ],
+        "Backend": [
+            {
+                "nombre": "ASP.NET Core",
+                "nivel": 70
+            },
+            {
+                "nombre": "Java",
+                "nivel": 65
+            },
+            {
+                "nombre": "Python",
+                "nivel": 60
+            },
+            {
+                "nombre": "C",
+                "nivel": 50
+            },
+            {
+                "nombre": "C++",
+                "nivel": 55
+            },
+            {
+                "nombre": "Haskell",
+                "nivel": 40
+            },
+            {
+                "nombre": "Prolog",
+                "nivel": 35
+            }
+        ],
+        "Bases de datos": [
+            {
+                "nombre": "MySQL",
+                "nivel": 75
+            },
+            {
+                "nombre": "SQL Server",
+                "nivel": 70
+            }
+        ]
+    },
+    "certificaciones": [
+        {
+            "titulo": "Operador de computadoras",
+            "entidad": "ILAC",
+            "url": "https://www.ilacvirtual.com/"
+        }
+    ],
+    "redes": {
+        "GitHub": "https://github.com/Chedrick343",
+        "LinkedIn": "https://www.linkedin.com/in/tuperfil"
+    },
+    "informacionAdicional": [
+        "Participante del voluntariado SHU+TEC en una reserva natural protegida",
+        "Altamente acoplable a cualquier grupo de trabajo",
+        "Participante de eventos computacionales como la hackaton interna del TEC",
+        "Social, elocuente y capaz de tomar liderato en momentos de alta presion"
+    ]
+}

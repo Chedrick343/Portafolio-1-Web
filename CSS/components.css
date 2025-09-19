@@ -40,10 +40,11 @@
         margin-right: 3rem;
         margin-left: 3rem;
         background-color: transparent;
-        color:red;
+        color:rgb(168, 95, 218);
         justify-content: center;
         align-items: center;
         border: 1px solid #370f5c;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 /*ELEMENTOS POR ID*/
     #cajaDeCursos{
@@ -90,8 +91,6 @@
     background-color: rgb(146, 140, 140);
     width: 15rem;
     border-radius: 300px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 #botonMenuHamburguesaMovil{
     color: white;
@@ -130,10 +129,141 @@
     height: 1rem;
 }
 
+#trayectoriaPersonal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    width: auto;
+    height: auto;
+    gap: 2rem;
+    padding: 2rem;
+
+}
+#informacionPersonal{
+    background-color: #2e2c2c;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1rem;
+
+}
+#nombre{
+    font-weight: bold;
+    color: rgb(170, 168, 168);
+    text-shadow: 1px 1px 10px rgb(53, 38, 38);
+}
+#biografia{
+    color: rgb(170, 168, 168);
+}
+#habilidadesTecnicas{
+    gap: 1rem;
+    background-color: #2e2c2c;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 100%;
+    
+}
+#certificaciones{
+    background-color: #2e2c2c;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+#redes{
+    background-color: #2e2c2c;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    text-align: center;
+
+}
+#infoAdicional{
+    background-color: #2e2c2c;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+.elementoBlanco{
+    color: white;
+}
+#descargarPdf{
+    position: fixed;
+    right: 2rem;
+    bottom: 3rem;
+    border-radius: 10rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: #180925;
+    color: white;
+    font-size: 11px;
+}
 /*SECCION DE HOVERS*/
 
 
 /*HOVERS DE CURSOS.HTML*/
+/* Fondo oscuro */
+.modal {
+    display: none;
+    /* oculto al inicio */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Caja blanca */
+.modal-contenido {
+    background-color: #111;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 600px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón cerrar */
+.cerrar {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+    color: red;
+}
+
+/* Cada trabajo */
+.trabajo {
+    border: 1px solid #370f5c;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #1a1a1a;
+}
+
+.trabajo h4 {
+    margin: 0 0 0.5rem 0;
+    color: #9f5fff;
+}
+
+.curso:hover{
+    background-color: #7734b6;
+    color: black;
+    transform: translate(-5px);
+}
 .selector:hover{
     box-shadow: 0 3px 30px rgba(204, 86, 204, 0.863);
 }
@@ -153,6 +283,9 @@
 /*MEDIA PARA HACER RESPONSIVE*/
 @media (min-width: 768px){
     /*ELEMENTOS CON CLASES*/
+    #trayectoriaPersonal{
+        padding-top: 6rem;
+    }
     #tituloCursos{
         margin-top: 5rem;
     }

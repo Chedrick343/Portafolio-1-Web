@@ -1,9 +1,9 @@
 html, body{
-    background-color: #000000;
+    background-color: #131111;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
 }
 footer{
     border-radius: 5rem;
@@ -61,5 +61,5 @@ nav.activo {
     }
 }
 @media (min-width: 1024px){
-    
+
 }

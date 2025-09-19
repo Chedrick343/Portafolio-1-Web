@@ -2,6 +2,7 @@
     const botonCerrar = document.getElementById("botonCerrarMenuHamburguesa");
     const botonCursos = document.getElementById("botonCursos");
     const botonInicio = document.getElementById("botonInicio");
+    const botonExperiencia = document.getElementById("botonExperiencia");
     const nav = document.querySelector("nav");
 
     botonAbrir.addEventListener("click", () => {
@@ -15,4 +16,7 @@
     });
     botonInicio.addEventListener("click", () => {
         window.location.href = "../index.html";
+    });
+    botonExperiencia.addEventListener("click",() =>{
+        window.location.href = "/HTML/experiencia.html"
     });
