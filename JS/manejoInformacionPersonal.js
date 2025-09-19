@@ -51,22 +51,21 @@ document.getElementById("descargarPdf").addEventListener("click", () => {
             const { jsPDF } = window.jspdf;
             const doc = new jsPDF();
 
-            // Foto (asegúrate de tener la ruta correcta a tu imagen)
-            const img = new Image();
-            img.src = "/sources/images/imagen-personal.png"; // 📌 cambia a tu ruta real
-            img.onload = () => {
-                doc.addImage(img, "JPEG", 15, 10, 40, 40); // x, y, width, height
 
-                // Nombre
+            const img = new Image();
+            img.src = "/sources/images/imagen-personal.png"; 
+            img.onload = () => {
+                doc.addImage(img, "JPEG", 15, 10, 40, 40); 
+
+
                 doc.setFontSize(16);
                 doc.text(data.nombre, 70, 20);
 
-                // Biografía
                 doc.setFontSize(12);
                 doc.text("Biografía:", 15, 60);
                 doc.text(doc.splitTextToSize(data.biografia, 180), 15, 70);
 
-                // Habilidades
+
                 doc.setFontSize(12);
                 doc.text("Habilidades:", 15, 100);
                 let y = 110;
@@ -76,13 +75,12 @@ document.getElementById("descargarPdf").addEventListener("click", () => {
                     data.habilidades[categoria].forEach(hab => {
                         let texto = hab.nombre
                             ? `${hab.nombre} (${hab.nivel}%)`
-                            : hab; // si fuera string
+                            : hab;
                         doc.text(`- ${texto}`, 30, y);
                         y += 6;
                     });
                 }
 
-                // Certificaciones
                 doc.text("Certificaciones:", 15, y + 10);
                 y += 16;
                 data.certificaciones.forEach(cert => {
@@ -90,15 +88,12 @@ document.getElementById("descargarPdf").addEventListener("click", () => {
                     y += 6;
                 });
 
-                // Redes
                 doc.text("Redes:", 15, y + 10);
                 y += 16;
                 for (let red in data.redes) {
                     doc.text(`${red}: ${data.redes[red]}`, 20, y);
                     y += 6;
                 }
-
-                // Información adicional
                 doc.text("Información adicional:", 15, y + 10);
                 y += 16;
                 data.informacionAdicional.forEach(info => {
@@ -106,7 +101,6 @@ document.getElementById("descargarPdf").addEventListener("click", () => {
                     y += 6;
                 });
 
-                // Descargar
                 doc.save("perfil.pdf");
             };
         });
