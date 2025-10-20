@@ -1,0 +1,91 @@
+@import url('components.css');
+
+/* Estilo general de la sección */
+#recomendaciones {
+    background-color: #1a1a1a;
+    border: 2px solid #370f5c;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;
+    margin: 2rem auto;
+    box-shadow: 0 5px 30px rgba(77, 13, 77, 0.6);
+}
+#botonVolver{
+    background-color: #2e2c2c;
+    border: 2px solid #370f5c;
+    color: #cda3ff;
+    height: 5rem;
+    width: 6rem;
+}
+#botonVolver:hover{
+    background-color: #f1eaea;
+    color: black;
+
+}
+
+#recomendaciones h2 {
+    text-align: center;
+    color: #cda3ff;
+    margin-bottom: 0.5rem;
+}
+
+#descripcionRecomendaciones {
+    text-align: center;
+    color: rgb(190, 190, 190);
+    margin-bottom: 2rem;
+}
+
+/* Formulario */
+#formularioRecomendacion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#nombreInput,
+#comentarioInput {
+    background-color: #2e2c2c;
+    color: white;
+    border: 1px solid #7734b6;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+#comentarioInput {
+    min-height: 5rem;
+    resize: none;
+}
+
+/* Lista de comentarios */
+#listaComentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.comentario {
+    background-color: #2e2c2c;
+    border: 1px solid #370f5c;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.comentario h4 {
+    color: #9f5fff;
+    margin-bottom: 0.3rem;
+}
+
+.comentario:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 15px rgba(204, 86, 204, 0.6);
+}
+
+/* Botón */
+#enviarBtn {
+    align-self: center;
+    width: 8rem;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones de compañeros</title>
+    <Link rel="stylesheet" href="../CSS/comentarios.css"></Link>
+
+</head>
+<body>
+    <section id="recomendaciones">
+        <button id="botonVolver">Volver</button>
+        <h2 class="elementoBlanco">Recomendaciones de Compañeros</h2>
+        <p id="descripcionRecomendaciones" class="elementoBlanco">
+            Califica mi desempeño como compañero. Es importante para mi conocer todas aquellas debilidades en las que puedo mejorar para ser un mejor profesional. Por eso les pido porfavor coloquen algún comentario sincero sobre mi forma de trabajo.
+        </p>
+
+        <div id="formularioRecomendacion">
+            <input type="text" id="nombreInput" placeholder="Tu nombre (opcional)" />
+            <textarea id="comentarioInput" placeholder="Escribe tu recomendación aquí..."></textarea>
+            <button id="enviarBtn" class="botonNavegacion">Enviar</button>
+        </div>
+
+        <div id="listaComentarios"></div>
+    </section>
+
+    <script>
+        const botonVolver = document.getElementById("botonVolver");
+        botonVolver.addEventListener("click", () => {
+            window.location.href = "../index.html";
+        });
+
+        async function cargarComentarios() {
+            try {
+                const respuesta = await fetch("comentarios.json");
+                const comentarios = await respuesta.json();
+                mostrarComentarios(comentarios);
+            } catch (error) {
+                console.error("Error al cargar comentarios:", error);
+            }
+        }
+
+
+        function mostrarComentarios(comentarios) {
+            const lista = document.getElementById("listaComentarios");
+            lista.innerHTML = "";
+            comentarios.forEach(c => {
+                const div = document.createElement("div");
+                div.className = "comentario";
+                div.innerHTML = `
+                    <h4>${c.nombre || "Anónimo"}</h4>
+                    <p>${c.texto}</p>
+                `;
+                lista.appendChild(div);
+            });
+        }
+
+
+        document.getElementById("enviarBtn").addEventListener("click", async () => {
+            const nombre = document.getElementById("nombreInput").value.trim();
+            const texto = document.getElementById("comentarioInput").value.trim();
+
+            if (!texto) {
+                alert("Por favor escribe una recomendación antes de enviar.");
+                return;
+            }
+
+            const res = await fetch("comentarios.json");
+            const comentarios = await res.json();
+
+            comentarios.push({ nombre, texto });
+
+
+            localStorage.setItem("comentarios", JSON.stringify(comentarios));
+
+
+            mostrarComentarios(comentarios);
+            document.getElementById("comentarioInput").value = "";
+        });
+
+
+        window.addEventListener("DOMContentLoaded", async () => {
+            const guardados = localStorage.getItem("comentarios");
+            if (guardados) {
+                mostrarComentarios(JSON.parse(guardados));
+            } else {
+                await cargarComentarios();
+            }
+        });
+    </script>
+</body>
+</html>

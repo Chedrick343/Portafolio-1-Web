@@ -3,6 +3,7 @@
     const botonCursos = document.getElementById("botonCursos");
     const botonInicio = document.getElementById("botonInicio");
     const botonExperiencia = document.getElementById("botonExperiencia");
+    const botonComentarios = document.getElementById("botonComentarios");
     const nav = document.querySelector("nav");
 
     botonAbrir.addEventListener("click", () => {
@@ -19,4 +20,7 @@
     });
     botonExperiencia.addEventListener("click",() =>{
         window.location.href = "/HTML/experiencia.html"
+    });
+    botonComentarios.addEventListener("click",() =>{
+        window.location.href = "/HTML/comentarios.html"
     });
